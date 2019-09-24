@@ -1,6 +1,7 @@
 # oci-nigthly-stop
 
 夜間にOCIのインスタンスを停止します。
+また、 ついでに Autonomous Database のライセンスモデルを BYOL に変更します。
 
 
 ## 停止対象のインスタンス
