@@ -32,3 +32,14 @@
 
     (以下 毎日24時に実行する場合の設定例)
     `0 0 * * * cd /home/opc; python3 -u /home/opc/oci-nightly-stop/stop.py > /home/opc/log/stop_`date +\%Y\%m\%d-\%H\%M\%S`.log 2>&1`
+
+
+## インスタンスを停止対象から除外したい場合
+
+各インスタンスに、以下の Defined Tag を設定しておくことで、停止対象から除外することができます。
+
+    - タグ・ネームスペース : control
+    - タグ ： nightly_stop
+    - タグの値 : false
+    
+エンドユーザー向けの設定方法のガイドは、https://github.com/mmarukaw/oci-nigthly-stop/blob/master/guide/howtoaddtags.md にありますので、こちらもご覧ください。
